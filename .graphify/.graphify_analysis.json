@@ -1,0 +1,417 @@
+{
+  "communities": {
+    "0": [
+      "hooks_use_mobile_useismobile",
+      "lib_utils_cn",
+      "src_components_ui_accordion_tsx",
+      "src_components_ui_alert_dialog_tsx",
+      "src_components_ui_alert_tsx",
+      "src_components_ui_avatar_tsx",
+      "src_components_ui_badge_tsx",
+      "src_components_ui_button_tsx",
+      "src_components_ui_calendar_tsx",
+      "src_components_ui_card_tsx",
+      "src_components_ui_carousel_tsx",
+      "src_components_ui_chart_tsx",
+      "src_components_ui_checkbox_tsx",
+      "src_components_ui_command_tsx",
+      "src_components_ui_context_menu_tsx",
+      "src_components_ui_dialog_tsx",
+      "src_components_ui_dropdown_menu_tsx",
+      "src_components_ui_form_tsx",
+      "src_components_ui_hover_card_tsx",
+      "src_components_ui_input_otp_tsx",
+      "src_components_ui_input_tsx",
+      "src_components_ui_label_tsx",
+      "src_components_ui_navigation_menu_tsx",
+      "src_components_ui_popover_tsx",
+      "src_components_ui_progress_tsx",
+      "src_components_ui_radio_group_tsx",
+      "src_components_ui_resizable_tsx",
+      "src_components_ui_scroll_area_tsx",
+      "src_components_ui_select_tsx",
+      "src_components_ui_separator_tsx",
+      "src_components_ui_sheet_tsx",
+      "src_components_ui_sidebar_tsx",
+      "src_components_ui_skeleton_tsx",
+      "src_components_ui_slider_tsx",
+      "src_components_ui_switch_tsx",
+      "src_components_ui_table_tsx",
+      "src_components_ui_tabs_tsx",
+      "src_components_ui_textarea_tsx",
+      "src_components_ui_toggle_group_tsx",
+      "src_components_ui_toggle_tsx",
+      "src_components_ui_tooltip_tsx",
+      "src_hooks_use_mobile_tsx",
+      "src_lib_utils_ts",
+      "ui_badge_badge",
+      "ui_calendar_cn",
+      "ui_carousel_usecarousel",
+      "ui_chart_usechart",
+      "ui_form_formfield",
+      "ui_form_useformfield",
+      "ui_resizable_cn",
+      "ui_sidebar_cn",
+      "ui_sidebar_handlekeydown",
+      "ui_sidebar_usesidebar",
+      "ui_skeleton_skeleton"
+    ],
+    "1": [
+      "cosmic_gallery_emotionalbreather_emotionalbreather",
+      "cosmic_gallery_handwrittenletter_handwrittenletter",
+      "cosmic_gallery_heroportal_usestarfield",
+      "cosmic_gallery_memorystrips_placeholderart",
+      "cosmic_gallery_videoatmosphere_videoatmosphere",
+      "hooks_usegsapreveal_usegsapreveal",
+      "hooks_uselenisscroll_uselenisscroll",
+      "src_components_cosmic_gallery_atmospherelayer_tsx",
+      "src_components_cosmic_gallery_cinematictext_tsx",
+      "src_components_cosmic_gallery_emotionalbreather_tsx",
+      "src_components_cosmic_gallery_finalreveal_tsx",
+      "src_components_cosmic_gallery_handwrittenletter_tsx",
+      "src_components_cosmic_gallery_heroportal_tsx",
+      "src_components_cosmic_gallery_memorystrips_tsx",
+      "src_components_cosmic_gallery_videoatmosphere_tsx",
+      "src_components_ui_auroratext_tsx",
+      "src_components_ui_blurorb_tsx",
+      "src_components_ui_cinematictitle_tsx",
+      "src_components_ui_floatingglasscard_tsx",
+      "src_components_ui_floatingheart_tsx",
+      "src_components_ui_galaxybackground_tsx",
+      "src_components_ui_glowbutton_tsx",
+      "src_components_ui_gradientdivider_tsx",
+      "src_hooks_usegsapreveal_ts",
+      "src_hooks_uselenisscroll_ts",
+      "src_pages_cosmicgallery_tsx",
+      "ui_auroratext_auroratext",
+      "ui_blurorb_blurorb",
+      "ui_cinematictitle_cinematictitle",
+      "ui_floatingglasscard_floatingglasscard",
+      "ui_floatingheart_floatingheart",
+      "ui_galaxybackground_handlemove",
+      "ui_glowbutton_glowbutton",
+      "ui_gradientdivider_gradientdivider"
+    ],
+    "2": [
+      "color_magenta_pink",
+      "emotion_joy",
+      "emotion_peace",
+      "snapchat_1181_hearts",
+      "snapchat_1181_person",
+      "snapchat_1364_lighting",
+      "snapchat_1364_lipstick",
+      "snapchat_1364_portrait",
+      "snapchat_1428_glasses",
+      "snapchat_1428_person",
+      "snapchat_1428_shirt",
+      "snapchat_1717_person",
+      "snapchat_1717_pink_background",
+      "snapchat_1717_stuffed_animal",
+      "snapchat_2254_dress",
+      "snapchat_2254_person",
+      "snapchat_2254_red_background",
+      "snapchat_749_hearts",
+      "snapchat_749_person",
+      "theme_love"
+    ],
+    "3": [
+      "components_floatingorb_orbgeometry",
+      "components_galaxyparticles_builddustdata",
+      "components_galaxyparticles_buildspiraldata",
+      "components_galaxyparticles_buildtwinkledata",
+      "components_galaxyparticles_createroundtexture",
+      "components_nebulaclouds_createarctexture",
+      "components_nebulaclouds_createcloudtexture",
+      "components_nebulaclouds_creategalaxytexture",
+      "hooks_usemouseparallax_usemouseparallax",
+      "src_components_floatingorb_tsx",
+      "src_components_galaxyparticles_tsx",
+      "src_components_nebulaclouds_tsx",
+      "src_components_shootingstars_tsx",
+      "src_components_starsbackground_tsx",
+      "src_hooks_usemouseparallax_ts",
+      "src_scenes_experience_tsx"
+    ],
+    "4": [
+      "components_cosmicbackground_onmove",
+      "components_warptransition_animate",
+      "components_warptransition_clamp",
+      "components_warptransition_easeinoutcubic",
+      "components_warptransition_easeoutcubic",
+      "components_warptransition_lerp",
+      "components_warptransition_updateviewport",
+      "routes_index_handleenter",
+      "routes_index_handleleave",
+      "routes_index_handlemove",
+      "routes_index_handlewarpcomplete",
+      "src_components_cosmicbackground_tsx",
+      "src_components_warptransition_tsx",
+      "src_routes_index_tsx"
+    ],
+    "5": [
+      "hooks_usememoryscroll_usememoryscroll",
+      "memory_memorycard_memorycard",
+      "memory_memorydata_buildmemories",
+      "memory_memorymodal_handlekey",
+      "memory_memorywall_onmove",
+      "memory_memorywall_tick",
+      "src_hooks_usememoryscroll_ts",
+      "src_memory_memorycard_tsx",
+      "src_memory_memorydata_ts",
+      "src_memory_memorydome_tsx",
+      "src_memory_memorymodal_tsx",
+      "src_memory_memorypath_tsx",
+      "src_memory_memorywall_tsx",
+      "src_types_memory_ts"
+    ],
+    "6": [
+      "components_huboverlay_onmove",
+      "hooks_uselenis_uselenis",
+      "scenes_memoryplanetscene_clamp",
+      "scenes_memoryplanetscene_createglowtexture",
+      "scenes_memoryplanetscene_creatememorytexture",
+      "scenes_memoryplanetscene_createmisttexture",
+      "scenes_memoryplanetscene_handlekey",
+      "scenes_memoryplanetscene_lerp",
+      "scenes_memoryplanetscene_onwheel",
+      "src_components_huboverlay_tsx",
+      "src_hooks_uselenis_ts",
+      "src_scenes_hubscene_tsx",
+      "src_scenes_memoryplanetscene_tsx"
+    ],
+    "7": [
+      "lib_error_page_rendererrorpage",
+      "routes_cosmic_gallery_cosmicgalleryroute",
+      "routes_root_errorcomponent",
+      "routes_root_notfoundcomponent",
+      "routes_root_rootcomponent",
+      "routes_root_rootshell",
+      "src_lib_error_page_ts",
+      "src_router_getrouter",
+      "src_router_tsx",
+      "src_routes_cosmic_gallery_tsx",
+      "src_routes_root_tsx",
+      "src_routetree_gen_ts",
+      "src_start_ts"
+    ],
+    "8": [
+      "lib_error_capture_consumelastcapturederror",
+      "lib_error_capture_record",
+      "src_lib_error_capture_ts",
+      "src_server_brandederrorresponse",
+      "src_server_fetch",
+      "src_server_getserverentry",
+      "src_server_iscatastrophicssrerrorbody",
+      "src_server_normalizecatastrophicssrresponse",
+      "src_server_ts"
+    ],
+    "9": [
+      "src_components_ui_menubar_tsx",
+      "ui_menubar_menubargroup",
+      "ui_menubar_menubarmenu",
+      "ui_menubar_menubarportal",
+      "ui_menubar_menubarradiogroup",
+      "ui_menubar_menubarsub"
+    ],
+    "10": [
+      "src_components_ui_pagination_tsx",
+      "ui_pagination_pagination",
+      "ui_pagination_paginationellipsis",
+      "ui_pagination_paginationlink",
+      "ui_pagination_paginationnext",
+      "ui_pagination_paginationprevious"
+    ],
+    "11": [
+      "cosmic-hero_blue_stars",
+      "cosmic-hero_magenta_nebula",
+      "cosmic-hero_planet",
+      "cosmic-hero_spiral_galaxy",
+      "theme_cosmic"
+    ],
+    "12": [
+      "src_components_ui_drawer_tsx",
+      "ui_drawer_drawer",
+      "ui_drawer_drawerfooter",
+      "ui_drawer_drawerheader"
+    ],
+    "13": [
+      "src_components_ui_breadcrumb_tsx",
+      "ui_breadcrumb_breadcrumbellipsis",
+      "ui_breadcrumb_breadcrumbseparator"
+    ],
+    "14": [
+      "src_components_ui_motionsection_tsx",
+      "ui_motionsection_motionsection"
+    ],
+    "15": [
+      "src_components_ui_sonner_tsx",
+      "ui_sonner_toaster"
+    ],
+    "16": [
+      "cosmic-hero_space"
+    ],
+    "17": [
+      "eslint_config_js"
+    ],
+    "18": [
+      "snapchat_1428_door"
+    ],
+    "19": [
+      "src_components_ui_aspect_ratio_tsx"
+    ],
+    "20": [
+      "src_components_ui_collapsible_tsx"
+    ],
+    "21": [
+      "vite_config_ts"
+    ]
+  },
+  "cohesion": {
+    "0": 0.05,
+    "1": 0.07,
+    "2": 0.13,
+    "3": 0.13,
+    "4": 0.19,
+    "5": 0.19,
+    "6": 0.17,
+    "7": 0.15,
+    "8": 0.36,
+    "9": 0.33,
+    "10": 0.33,
+    "11": 0.5,
+    "12": 0.5,
+    "13": 0.67,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "18": 1,
+    "19": 1,
+    "20": 1,
+    "21": 1
+  },
+  "gods": [
+    {
+      "id": "components_warptransition_animate",
+      "label": "animate()",
+      "edges": 5,
+      "degree": 5
+    },
+    {
+      "id": "src_server_normalizecatastrophicssrresponse",
+      "label": "normalizeCatastrophicSsrResponse()",
+      "edges": 4,
+      "degree": 4
+    },
+    {
+      "id": "src_server_fetch",
+      "label": "fetch()",
+      "edges": 4,
+      "degree": 4
+    },
+    {
+      "id": "src_server_brandederrorresponse",
+      "label": "brandedErrorResponse()",
+      "edges": 3,
+      "degree": 3
+    },
+    {
+      "id": "cosmic-hero_spiral_galaxy",
+      "label": "Spiral Galaxy",
+      "edges": 3,
+      "degree": 3
+    },
+    {
+      "id": "snapchat_1364_portrait",
+      "label": "Person - Serene",
+      "edges": 3,
+      "degree": 3
+    },
+    {
+      "id": "snapchat_1428_person",
+      "label": "Person - Thoughtful",
+      "edges": 3,
+      "degree": 3
+    },
+    {
+      "id": "components_warptransition_clamp",
+      "label": "clamp()",
+      "edges": 2,
+      "degree": 2
+    },
+    {
+      "id": "components_warptransition_lerp",
+      "label": "lerp()",
+      "edges": 2,
+      "degree": 2
+    },
+    {
+      "id": "components_warptransition_easeinoutcubic",
+      "label": "easeInOutCubic()",
+      "edges": 2,
+      "degree": 2
+    }
+  ],
+  "surprises": [],
+  "labels": {
+    "0": "Community 0",
+    "1": "Community 1",
+    "2": "Community 2",
+    "3": "Community 3",
+    "4": "Community 4",
+    "5": "Community 5",
+    "6": "Community 6",
+    "7": "Community 7",
+    "8": "Community 8",
+    "9": "Community 9",
+    "10": "Community 10",
+    "11": "Community 11",
+    "12": "Community 12",
+    "13": "Community 13",
+    "14": "Community 14",
+    "15": "Community 15",
+    "16": "Community 16",
+    "17": "Community 17",
+    "18": "Community 18",
+    "19": "Community 19",
+    "20": "Community 20",
+    "21": "Community 21"
+  },
+  "questions": [
+    {
+      "type": "verify_inferred",
+      "question": "Are the 5 inferred relationships involving `Love & Affection` (e.g. with `Stuffed Reindeer` and `Red Background`) actually correct?",
+      "why": "`Love & Affection` has 5 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 3 inferred relationships involving `Magenta & Pink Palette` (e.g. with `Floral Dress` and `Love & Affection`) actually correct?",
+      "why": "`Magenta & Pink Palette` has 3 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Planet`, `Space Setting`, `Dark Pink Lipstick` to the rest of the system?",
+      "why": "9 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 2` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 3` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
