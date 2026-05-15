@@ -8,6 +8,7 @@ import { FloatingOrb } from "@/components/FloatingOrb";
 import { ShootingStars } from "@/components/ShootingStars";
 import { NebulaClouds } from "@/components/NebulaClouds";
 import { useMouseParallax } from "@/hooks/useMouseParallax";
+import { useNavigate } from '@tanstack/react-router';
 
 /* ------------------------------------------------------------------ */
 /*  Reusable vectors (avoid GC pressure inside useFrame)               */
@@ -35,7 +36,7 @@ export const Experience = ({
 }) => {
   const { camera } = useThree();
   const mouseRef = useMouseParallax(0.035); // soft damping
-
+  const navigate = useNavigate();
   // Orbit group for gentle foreground parallax shift
   const orbGroupRef = useRef<THREE.Group>(null);
 
@@ -142,14 +143,19 @@ export const Experience = ({
           mouseRef={mouseRef}
           onClick={onMemoryPlanet}
         />
-        <FloatingOrb variant="musicOrb" position={[3.5, -0.5, -5]} mouseRef={mouseRef} />
+        {/* <FloatingOrb variant="musicOrb" position={[3.5, -0.5, -5]} mouseRef={mouseRef} /> */}
         <FloatingOrb
           variant="secretCrystal"
           position={[-2, -1.8, -7]}
           mouseRef={mouseRef}
           onClick={onSecretCrystal}
         />
-        <FloatingOrb variant="finalStar" position={[1.5, 2.5, -4.5]} mouseRef={mouseRef} />
+        <FloatingOrb
+            variant="finalStar"
+            position={[1.5, 2.5, -4.5]}
+            mouseRef={mouseRef}
+            onClick={() => navigate({ to: '/final-orb' })}
+/>
       </group>
     </>
   );

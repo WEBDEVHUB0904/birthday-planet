@@ -28,7 +28,7 @@ interface MemoryWallProps {
  * Result: edges appear LARGER and wrap toward the viewer — true
  * concave IMAX dome feel. The viewer sits INSIDE the curvature.
  */
-const PERSPECTIVE = 1400;
+const PERSPECTIVE = 1800;
 const DOME_RADIUS = 550;
 const CYLINDER_Z = 100; // slight forward push so dome isn't too far
 

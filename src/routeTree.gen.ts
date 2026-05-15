@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as FinalOrbRouteImport } from './routes/final-orb'
 import { Route as CosmicGalleryRouteImport } from './routes/cosmic-gallery'
 import { Route as IndexRouteImport } from './routes/index'
 
+const FinalOrbRoute = FinalOrbRouteImport.update({
+  id: '/final-orb',
+  path: '/final-orb',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CosmicGalleryRoute = CosmicGalleryRouteImport.update({
   id: '/cosmic-gallery',
   path: '/cosmic-gallery',
@@ -26,31 +32,42 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cosmic-gallery': typeof CosmicGalleryRoute
+  '/final-orb': typeof FinalOrbRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cosmic-gallery': typeof CosmicGalleryRoute
+  '/final-orb': typeof FinalOrbRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cosmic-gallery': typeof CosmicGalleryRoute
+  '/final-orb': typeof FinalOrbRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cosmic-gallery'
+  fullPaths: '/' | '/cosmic-gallery' | '/final-orb'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cosmic-gallery'
-  id: '__root__' | '/' | '/cosmic-gallery'
+  to: '/' | '/cosmic-gallery' | '/final-orb'
+  id: '__root__' | '/' | '/cosmic-gallery' | '/final-orb'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CosmicGalleryRoute: typeof CosmicGalleryRoute
+  FinalOrbRoute: typeof FinalOrbRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/final-orb': {
+      id: '/final-orb'
+      path: '/final-orb'
+      fullPath: '/final-orb'
+      preLoaderRoute: typeof FinalOrbRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cosmic-gallery': {
       id: '/cosmic-gallery'
       path: '/cosmic-gallery'
@@ -71,6 +88,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CosmicGalleryRoute: CosmicGalleryRoute,
+  FinalOrbRoute: FinalOrbRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
