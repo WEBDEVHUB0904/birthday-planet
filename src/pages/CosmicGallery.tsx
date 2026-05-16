@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo,useEffect } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { HeroPortal } from "@/components/cosmic-gallery/HeroPortal";
 import { CinematicText } from "@/components/cosmic-gallery/CinematicText";
@@ -10,13 +10,17 @@ import { EmotionalBreather } from "@/components/cosmic-gallery/EmotionalBreather
 import { AtmosphereLayer } from "@/components/cosmic-gallery/AtmosphereLayer";
 import { HandwrittenOverlay } from "@/components/cosmic-gallery/HandwrittenOverlay";
 import { useLenisScroll } from "@/hooks/useLenisScroll";
-
+import { audioManager } from "@/lib/audioManager";
 export const CosmicGallery = () => {
   const navigate = useNavigate();
   useLenisScroll();
 
   const videoSrc = useMemo(() => "/videos/cosmic-gallery.mp4", []);
 
+  useEffect(() => {
+    audioManager.play("/audio/secret.mp3", 0.3);
+    return () => audioManager.stop();
+  }, []);
   return (
     <main className="cosmic-gallery">
       {/* ── persistent atmosphere ─────────────────────────────── */}
@@ -47,9 +51,9 @@ export const CosmicGallery = () => {
 
       {/* ── breathing space ───────────────────────────────────── */}
       <EmotionalBreather
-        line="You became a permanent address inside my chest."
-        subline="Not a city. Not a room. Just the weight of remembering."
-        annotation="— filed under: things I never said"
+        line="Some memories learn how to stay longer than time intended."
+        subline="Years moved forward quietly. Somehow, these moments never did."
+        annotation="— archived somewhere between silence and starlight"
       />
 
       {/* ── memory cards ──────────────────────────────────────── */}

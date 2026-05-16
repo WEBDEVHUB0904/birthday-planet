@@ -4,7 +4,7 @@ import { CosmicBackground } from "@/components/CosmicBackground";
 import { WarpTransition } from "@/components/WarpTransition";
 import { Sparkles, ArrowRight, Mouse } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-
+import { audioManager } from "@/lib/audioManager";
 // Lazy-load the heavy 3D scene so the landing page stays fast
 const HubScene = lazy(() => import("@/scenes/HubScene").then((m) => ({ default: m.HubScene })));
 
@@ -38,6 +38,10 @@ function Index() {
     }
   }, [enter]);
 
+  useEffect(() => {
+    audioManager.play("/audio/landing.mp3", 0.3);
+  }, []);
+
   // Magnetic hover
   const handleMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const btn = btnRef.current;
@@ -54,6 +58,8 @@ function Index() {
   };
 
   const handleEnter = () => {
+    audioManager.resumePending(); // clears browser autoplay block
+    audioManager.unlock();        // marks user as interacted
     setPhase("warp");
   };
 

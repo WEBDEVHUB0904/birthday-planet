@@ -10,7 +10,7 @@ import {
 
 import appCss from "../styles.css?url";
 import cosmicGalleryCss from "../cosmic-gallery.css?url";
-
+import { AudioToggle } from "@/components/AudioToggle";
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -122,6 +122,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <Outlet />
+      <AudioToggle />
     </QueryClientProvider>
   );
 }

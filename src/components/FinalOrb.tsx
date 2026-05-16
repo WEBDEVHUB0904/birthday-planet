@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
 import { useLenis } from "@/hooks/useLenis";
+import { audioManager } from "@/lib/audioManager";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -334,6 +335,11 @@ function FinalOrbContent({ fireworksRef, nameRevealRef }: FinalOrbContentProps) 
   link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@600&display=swap";
   document.head.appendChild(link);
   return () => { document.head.removeChild(link); };
+  }, []);
+
+  useEffect(() => {
+  audioManager.play("/audio/final.mp3", 0.35);
+  return () => audioManager.stop();
   }, []);
 
   /* inject @keyframes shimmer once */

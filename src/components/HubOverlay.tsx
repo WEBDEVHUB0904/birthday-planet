@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { audioManager } from "@/lib/audioManager";
 /**
  * Cinematic HTML overlay that sits on top of the 3D canvas.
  *
@@ -19,6 +19,10 @@ export const HubOverlay = () => {
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 900);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    audioManager.play("/audio/hub.mp3", 0.2);
   }, []);
 
   // Track mouse for HTML parallax (smooth via CSS transition)
@@ -76,7 +80,7 @@ export const HubOverlay = () => {
                 textShadow: "none",
               }}
             >
-              A Universe of Us
+              A sky stitched together from moments that stayed
             </h1>
 
             {/* Subtle shimmer line under title */}
