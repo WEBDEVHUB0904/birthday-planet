@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import Vivus from "vivus";
+// import Vivus from "vivus";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import { useGSAPReveal } from "@/hooks/useGSAPReveal";
@@ -13,28 +13,60 @@ export const HandwrittenLetter = () => {
 
   useGSAPReveal(sectionRef, { y: 24, duration: 1.1 });
 
-  useEffect(() => {
-    if (!svgRef.current) return;
+  // useEffect(() => {
+  //   if (!svgRef.current) return;
 
-    vivusRef.current = new Vivus(svgRef.current, {
+  //   vivusRef.current = new Vivus(svgRef.current, {
+  //     duration: 160,
+  //     type: "oneByOne",
+  //     start: "manual",
+  //   });
+
+  //   const trigger = ScrollTrigger.create({
+  //     trigger: sectionRef.current,
+  //     start: "top 70%",
+  //     onEnter: () => vivusRef.current?.play(1),
+  //     onLeaveBack: () => vivusRef.current?.stop().reset(),
+  //   });
+
+  //   return () => {
+  //     trigger.kill();
+  //     vivusRef.current?.stop().destroy();
+  //     vivusRef.current = null;
+  //   };
+  // }, []);
+
+  useEffect(() => {
+  if (!svgRef.current || !sectionRef.current) return;
+
+  let trigger: ScrollTrigger;
+
+  const initVivus = async () => {
+    const VivusModule = await import("vivus");
+    const Vivus = VivusModule.default;
+
+    vivusRef.current = new Vivus(svgRef.current!, {
       duration: 160,
       type: "oneByOne",
       start: "manual",
     });
 
-    const trigger = ScrollTrigger.create({
-      trigger: sectionRef.current,
+    trigger = ScrollTrigger.create({
+      trigger: sectionRef.current!,
       start: "top 70%",
       onEnter: () => vivusRef.current?.play(1),
       onLeaveBack: () => vivusRef.current?.stop().reset(),
     });
+  };
 
-    return () => {
-      trigger.kill();
-      vivusRef.current?.stop().destroy();
-      vivusRef.current = null;
-    };
-  }, []);
+  initVivus();
+
+  return () => {
+    trigger?.kill();
+    vivusRef.current?.stop().destroy();
+    vivusRef.current = null;
+  };
+}, []);
 
   return (
     <section ref={sectionRef} className="cg-letter">
